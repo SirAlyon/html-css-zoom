@@ -7,6 +7,8 @@
     --dark-light: rgba(74, 74, 74, 1);
     --success: rgba(75, 200, 0, 1);
     --error: rgba(228, 44, 55, 1);
+    --col-number: 7;
+    --row-number: 5;
 }
 
 body{
@@ -19,9 +21,23 @@ body{
     color: var(--success);
 }
 
-.m-lt-rt{
-    margin-left: 0.6rem;
-    margin-right: 2.5rem;
+.m-lt-1{
+    margin-left: 1rem;
+}
+
+.m-lt-2{
+    margin-left: 1.5rem;
+}
+
+.m-rt{
+    margin-right: 1.5rem;
+}
+
+.angle-up,
+.icon,
+.speaker-view,
+.end-meeting{
+    cursor: pointer;
 }
 
 /* #endregion */
@@ -45,8 +61,8 @@ body{
 }
 
 .web-cam{
-    width: calc((100% - 70px) / 7);
-    height: calc((100% - 90px) / 5);
+    width: calc((100% - 10px * (var(--col-number) - 1 )) / var(--col-number));
+    height: calc((100% - 20px * (var(--row-number) - 1 )) / var(--row-number));
     display: flex;
     background-image: url(https://picsum.photos/190/115);
     background-size: cover;
@@ -62,7 +78,7 @@ body{
 
 .speaker-view{
     position: absolute;
-    top: 5px;
+    top: 7px;
     right: 10px;
 }
 
@@ -106,9 +122,9 @@ body{
     font-size: 2rem;
 }
 
-.left-menu .fa-angle-up{
-    margin-left: 10px;
-}
+/* .left-menu .fa-angle-up{
+    margin-left: 20px;
+} */
 
 .main-menu{
     width: 40%;
@@ -134,10 +150,11 @@ body{
     padding: 0px 15px;
 }
 
-#angle-up{
+.angle-up{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /* #endregion */
 
