@@ -4,10 +4,27 @@
 
 :root{
     --dark: rgba(34, 34, 34, 1);
+    --dark-light: rgba(74, 74, 74, 1);
     --success: rgba(75, 200, 0, 1);
     --error: rgba(228, 44, 55, 1);
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* #region Utility */
+
+.bg-success{
+    color: var(--success);
+}
+
+.m-lt-rt{
+    margin-left: 0.6rem;
+    margin-right: 2.5rem;
+}
+
+/* #endregion */
 
 /* #region Main */
 
@@ -19,7 +36,6 @@
 
 /* #region Footer */
 
-
 #site_footer{
     height: 70px;
     background-color: var(--dark);
@@ -29,12 +45,12 @@
     align-items: center;
 }
 
+
 .left-menu{
-    width: 15%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
 }
 
 .icon{
@@ -50,9 +66,37 @@
     font-size: 2rem;
 }
 
-.icon i:nth-child(2){
+.left-menu .fa-angle-up{
     margin-left: 10px;
 }
 
+.main-menu{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
 
+.right-menu{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.end-meeting{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--error);
+    background-color: var(--dark-light);
+    padding: 0px 15px;
+}
+
+#angle-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* #endregion */

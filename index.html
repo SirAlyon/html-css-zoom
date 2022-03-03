@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>My Zoom Layout</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,7 +23,7 @@
 
     <footer id="site_footer">
         <div class="left-menu">
-            <div class="icon">
+            <div class="icon m-lt-rt">
                 <i class="fa-solid fa-microphone"></i>
                 Mute
                 <i class="fa-solid fa-angle-up"></i>
@@ -33,20 +36,53 @@
                 Stop Video
                 <i class="fa-solid fa-angle-up"></i>
             </div>
-                
+        </div>
 
-        </div>
+
         <div class="main-menu">
-            <i class="fa-solid fa-user-plus"></i>
-            <i class="fa-solid fa-user-group"></i>
-            <i class="fa-solid fa-chart-column"></i>
-            <i class="fa-solid fa-share-from-square"></i>
-            <i class="fa-solid fa-share-from-square"></i>
-            <i class="fa-solid fa-share-from-square"></i>
-            <i class="fa-solid fa-grid-horizontal"></i>
-            <i class="fa-solid fa-ellipsis"></i>
+            <div class="icon">
+                <i class="fa-solid fa-user-plus"></i>
+                Invite
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user-group"></i>
+                Manage Partecipants
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-chart-column"></i>
+                Pooling
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-share-from-square bg-success"></i>
+                Share Screen
+            </div>
+            <div id="angle-up"> <!-- Perchè non riesco a sovrascrivere il font se uso la classe .icon? -->
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-comment"></i>
+                Chat
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-record-vinyl"></i>
+                Record
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-table-cells"></i>
+                Breakout Rooms
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-ellipsis"></i>
+                More
+            </div>                
         </div>
-        <div class="right-menu"></div>
+
+
+        <div class="right-menu">
+            <div class="end-meeting">
+                 End meeting
+            </div>
+        </div>
     </footer>
     <!-- /#site_footer -->
 
