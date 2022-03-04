@@ -41,6 +41,17 @@ body{
     cursor: pointer;
 }
 
+.talking{
+    border: 1px solid var(--success);
+}
+
+/* Hover */
+
+.web-cam:hover{
+    border: 1px solid lightgrey;
+}
+
+
 /* #endregion */
 
 /* #region Main */
